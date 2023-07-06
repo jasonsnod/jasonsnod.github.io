@@ -1,0 +1,83 @@
+<!--The following page acts as a landing page for a professional site by Jason Snoddy. 
+    It is the starting point of a more fleshed out website.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jason Snoddy Homepage</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+
+<!--This will be the core of the page including the background video, sections describing myself, and contact links.-->
+    <body>
+
+<!--This is the background video that plays. It loops, and has no controls. 
+    Its display characteristics are further styled in the stylesheet.-->
+        <video autoplay muted loop>
+            <source src="C:\Users\Jacoin\Coding Projects\websites\Login Trial\Videos\Neon Rays.mp4" type="video/mp4">
+            Looped video of colors
+        </video>
+
+        <header>
+            <h1>Jason Snoddy (Made This Webpage)</h1>
+            <h3>Software Engineer</h3>
+        </header>
+
+<!--The following section includes the content that describes myself, my career, and contact links.
+    The <main> element was given the class .container so that it can be easily identified as a grid container (specified in the stylesheet).-->
+        <main class="container">
+
+<!--All the sections within the <main> element were given the class .grid_item so they could be easily identified as grid items of the <main> element, a grid container.
+    The hyperlinked word in the final <p> element redirects the user to the #contact section within the page.-->
+            <section class="intro grid_item">
+                <h2>Hello! I am Jason Snoddy</h2>
+                <p>I am a software engineer based in Athens, OH. I hope to find a job in one of three cities; Portland, Chicago, or Pittsburgh, or other cities if the opportunity is right!</p>
+                <p>I also consider myself a musician and writer. Therefore I want intend my software creations to:</p>
+                <ol>
+                    <li>Have an impact on the world</li>
+                    <li>Have a unique twist to them</li>
+                    <li>Have a quality that is of my own making</li>
+                </ol>
+                <p>Feel free to get in <a href="#contact">contact</a> with me!</p>
+
+            </section>
+            <section class="about_me grid_item">
+                <h2>About Jason</h2>
+                <p>
+                    After completing his Bachelor's and Master's in music, Jason both taught and performed on a freelance basis.
+                    He taught at a nonprofit for a year before switching to one-on-one lessons and holding a studio of nearly 50 students.
+                    Along with that he performed with multiple groups of varying styles and most recently did an extended stint of performing on cruise ships.
+                    <br>
+                    <br>
+                    He always has had a strong interest in technology, even building his own computer while in high school, so he finally decided to make it a core part of his career aspirations.
+                    <br>
+                    <br>
+                    Jason is excited to start creating new projects and working on solutions that can solve your company's technological needs. He is most interested in the background logistics of a companies online presence.
+                </p>
+            </section>
+
+<!--This section was given the id #contact so that it could be directed to with a hyperlink earlier in the page, and because it has specific styling rules applied to it.-->
+            <section id="contact" class="grid_item">
+                <h2>Contact Jason</h2>
+                <p>Feel free to get in contact with Jason at any time! <br>He is excited to hear from you!</p> 
+
+<!--This list of contact links is structued in this manner for an ease of styling within a grid container.
+    Each <p> element takes up a column and fills those spaces uniformly.-->
+                <div class="contact_list">
+                    <p><a href="https://www.linkedin.com/in/jsno/" target="_blank">Linkedin: <br>Jason Snoddy</a></p>
+                    <p><a href="https://github.com/jasonsnod" target="_blank">Github: <br>jasonsnod</a></p>
+                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jasonsnod@gmail.com" target="_blank">Email: <br>jasonsnod@gmail.com</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h5>© 2023 Jason Snoddy</h5>
+        </footer>
+    </body>
+</html>

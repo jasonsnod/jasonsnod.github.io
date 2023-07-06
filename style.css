@@ -1,0 +1,82 @@
+/*This first ruleset styles some of the more fundamental aspects of the page. Setting the font-size here helped to fit the font in a cleaner way.*/
+body {
+    color: rgb(178, 179, 168);
+    background-color: black;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+}
+
+/*This ruleset is the one that makes the video of the site into a background video.
+The ruleset forces the video to the very back of the website, makes it cover it, not move when scrolling through the site,
+adjust to the screen size and have no border or margin.*/
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/*The following rulesets dictate the styling of hyperlinks within the HTML.
+These make sure to change its colors, underlining, and what the pointer looks like when hovering over the links.*/
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: rgb(0, 242, 255);
+}
+
+a:hover {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header {
+    width: 45%;
+    text-align: center;
+}
+
+/*This ruleset sets the <main> element with class .container to a grid container. With some various specific properties.*/
+.container {
+    display: grid;
+    width: 45%;
+    row-gap: 10px;
+}
+
+/*These are sizing and border rules applied to all the grid items.*/
+.grid_item {
+    padding: 5px;
+    border: 1px solid rgb(178, 179, 168);
+    border-radius: 10px;
+}
+
+/*These are some text layout rules assigned to specific text elements within the grid items. 
+These help to create some consistency of look.*/
+.grid_item p, h2 {
+    text-align: center;
+}
+
+/*This ruleset organizes the contact links into a grid and makes them consistent with the layout of the rest of the site.*/
+.contact_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+    width: 45%;
+    text-align: center;
+}
+
+/*This ruleset is important as it deals with a very small screensize.
+It ensures that the video will always be fully shown, even for smaller screens.*/
+@media only screen and (max-aspect-ration: 16/9) {
+    video {
+        width: auto;
+        height: 100%;
+    }
+}
