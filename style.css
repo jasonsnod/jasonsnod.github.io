@@ -57,8 +57,17 @@ header {
 
 /*These are some text layout rules assigned to specific text elements within the grid items. 
 These help to create some consistency of look.*/
-.grid_item p, h2 {
+.grid_item p, h2, ul {
     text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 90%;
+    margin-left: 5%;
 }
 
 /*This ruleset organizes the contact links into a grid and makes them consistent with the layout of the rest of the site.*/
